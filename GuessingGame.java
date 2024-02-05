@@ -26,12 +26,12 @@ public class GuessingGame
 
         Scanner keyboard = new Scanner(System.in);
         int guessCounter = 1;
-        final int QUIT = 0;
+        final int QUIT = -1;
 
         System.out.println("Guess My Number Game by J. Arzola");
         System.out.println();
         System.out.println("A secret number between 1-100 has been generated...");
-        System.out.println("Enter guess 0 to quit.");
+        System.out.println("Enter guess -1 to quit.");
         System.out.println();
         System.out.print("Enter your guess? ");
         int userGuess = keyboard.nextInt();
